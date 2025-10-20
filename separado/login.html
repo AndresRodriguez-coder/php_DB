@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Iniciar Sesión</title>
+  </head>
+  <body>
+    <h2>Iniciar Sesión</h2>
+    <form action="login.php" method="post">
+      <div>
+        <label for="email"> Correo electrónico: </label>
+        <input type="email" name="email" id="email" required />
+      </div>
+      <div>
+        <label for="clave"> Contraseña: </label>
+        <input type="password" name="clave" id="clave" required />
+      </div>
+      <div>
+        <label>
+          <input type="checkbox" name="recordar" value="1" />
+          Recordarme
+        </label>
+      </div>
+      <button type="submit">Iniciar Sesión</button>
+    </form>
+    <p>
+      <a href="recuperar.php"> ¿Olvidaste tu contraseña? </a>
+    </p>
+    <p>
+      ¿No tienes cuenta?
+      <a href="registro.php"> Regístrate </a>
+    </p>
+  </body>
+</html>
